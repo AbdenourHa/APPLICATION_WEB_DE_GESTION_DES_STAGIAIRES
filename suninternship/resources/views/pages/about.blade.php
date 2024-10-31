@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page About</title>
-    <link rel="icon" href="{{ asset('images/suninternship-icon.png') }}">
+    <link rel="icon" href="{{ asset('images/sonatrach.svg.png') }}">
     <link rel="stylesheet" href="{{ asset('css/default-styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main-pages.css') }}">

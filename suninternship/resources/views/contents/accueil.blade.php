@@ -1,16 +1,16 @@
 <section class="welcome">
     <div class="container">
-    <h1>Bienvenue sur Sun Internship</h1>
+    <h1>Bienvenue</h1>
     <p>
-        Notre plateforme facilite la gestion des stagiaires au sein de votre
-        entreprise. Commencez dès aujourd'hui et rationalisez votre
-        processus de gestion des stagiaires.
+        Notre Application facilite la gestion des stagiaires au sein de <strong>Sonatrach</strong>.
     </p>
-    <a href="{{ route('login') }}" class="btn btn-primary">Commencer</a>
+    <a href="{{ route('login') }}" class="btn btn-primary">Se connecter</a>
     </div>
-</section>
+    
+    </section>
+    
 
-<section class="advantages">
+{{-- <section class="advantages">
     <div class="container">
     <h2 class="advantages-title">Nos principales qualités</h2>
     <div class="advantages-container">
@@ -44,9 +44,9 @@
         </div>
     </div>
     </div>
-</section>
+</section> --}}
 
-<section class="developer">
+{{-- <section class="developer">
     <div class="container">
     <h2>À propos du développeur</h2>
     <div class="developer-info">
@@ -59,4 +59,4 @@
         </div>
     </div>
     </div>
-</section>
+</section> --}}

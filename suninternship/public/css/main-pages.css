@@ -31,7 +31,7 @@
     display: inline-block;
     padding: 12px 24px;
     font-size: 1.2em;
-    background-color: #007bff;
+    background-color: #ff8500;
     color: #fff;
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -39,15 +39,15 @@
   }
   
   .btn:hover {
-    background-color: #0053ba;
+    background-color: #000000;
     color:#fff;
   }
   
   .btn-primary {
     border: none;
   }
-  
-  /* Features section styles */
+
+  /* Features section styles
   .features {
     padding: 80px 0;
     text-align: center;
@@ -85,9 +85,9 @@
   .feature-item p {
     font-size: 1.1em;
     color: #666;
-  }
+  } */
   
-  /* Developer section styles */
+  /* Developer section styles
   .developer {
     background-color: #007bff;
     color: #fff;
@@ -129,7 +129,7 @@
   
   .developer-details i {
     margin-right: 10px;
-  }
+  } */
   
   /* Footer styles */
   footer {

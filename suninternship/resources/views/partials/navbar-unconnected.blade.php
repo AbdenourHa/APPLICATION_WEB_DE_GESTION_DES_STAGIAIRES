@@ -1,6 +1,7 @@
 <header>
     <nav class="navbar">
-        <a href="{{ route('accueil') }}" class="logo" title="Cliquez pour allez vers l'accueil"><img src="{{ asset('images/suninternship.png') }}" alt="Logo"></a>
+        <a href="{{ route('accueil') }}" class="logo" title="Cliquez pour allez vers l'accueil">
+          <img src="{{ asset('images/ssssssonatrach.ico') }}" alt="Logo"></a>
         <ul>
             <li><a href="{{ route('about') }}">À propos</a></li>
             <li><a href="{{ route('service') }}">Service</a></li>

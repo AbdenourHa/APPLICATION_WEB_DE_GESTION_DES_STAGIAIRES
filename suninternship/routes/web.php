@@ -96,16 +96,16 @@ Route::get('/interns/export/excel', [InternController::class, 'exportToExcel'])-
 Route::get('/interns/export/pdf', [InternController::class, 'exportToPDF'])->name('interns.export.pdf');
 Route::get('/interns/{id}/attestation', [InternController::class, 'generateAttestation'])->name('interns.attestation');
 
-Route::post('/contact', function (Request $request) {
-    $data = $request->validate([
+ Route::post('/contact', function (Request $request) {
+     $data = $request->validate([
         'name' => 'required',
         'email' => 'required|email',
         'message' => 'required',
-    ]);
+]);
 
     // Send the email
     Mail::send('emails.contact', ['data' => $data], function ($message) use ($data) {
-        $message->to('ossamaett2002@gmail.com', 'Recipient Name')
+        $message->to('abdou09nn@gmail.com', 'Recipient Name')
                 ->subject('New Contact Form Submission');
     });
     
