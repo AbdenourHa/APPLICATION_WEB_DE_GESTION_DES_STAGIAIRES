@@ -54,7 +54,7 @@
 <body>
     <div class="header">
         <div class="logo">
-            <img src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('images/suninternship.png'))) }}" alt="Logo">
+            <img src="data:image/x-icon;base64,{{ base64_encode(file_get_contents(public_path('images/ssssssonatrach.ico'))) }}" alt="Logo">
         </div>
         <div class="export-info">
             Page : {{ $pageNumber }} / {{ $totalPages }} | Exporté en: {{ now()->format('Y-m-d H:i:s') }}
@@ -65,14 +65,14 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Prénom</th>
                 <th>Nom</th>
+                <th>Prenom</th>
                 <th>Âge</th>
-                <th>CIN</th>
                 <th>Téléphone</th>
-                <th>Adresse</th>
-                <th>École</th>
-                <th>Secteur</th>
+                <th>CIN</th>
+                <th>Adresse personnelle</th>
+                <th>Centre/institut</th>
+                <th>Spécialité</th>
                 <th>Date de début</th>
                 <th>Date de fin</th>
             </tr>

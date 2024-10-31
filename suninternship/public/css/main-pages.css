@@ -285,7 +285,7 @@
   
   /* Style the form submit button */
   button[type="submit"] {
-    background-color: #0077ff;
+    background-color: #ff8500;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -303,7 +303,7 @@
   
   /* Style the form submit button on hover */
   button[type="submit"]:hover {
-    background-color: #0053ba;
+    background-color: #000000;
   }
   
   .cta {
@@ -436,7 +436,7 @@
   }
   .contact-note i {
     margin-right: 10px;
-    color: #007bff;
+    color: #000000;
   }
   
   .advantages {

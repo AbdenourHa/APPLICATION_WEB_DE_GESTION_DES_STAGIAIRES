@@ -3,23 +3,23 @@
   <div class="card">
     <div class="title">Stagiaires</div>
     <div class="stats-container">
-      <i class="fas fa-users icon"></i>
+      {{-- <i class="fas fa-users icon"></i> --}}
       <span class="stats interns">{{ $internCount > 0 ? $internCount : 0 }}</span>
     </div>
   </div>
 
   <div class="card">
-    <div class="title">Secteurs</div>
+    <div class="title">Spécialité</div>
     <div class="stats-container">
-      <i class="fas fa-building icon"></i>
+      {{-- <i class="fas fa-building icon"></i> --}}
       <span class="stats sectors">{{ $sectorsCount > 0 ? $sectorsCount : 0 }}</span>
     </div>
   </div>
 
   <div class="card">
-    <div class="title">Stagiaires proches de la fin</div>
+    <div class="title">Stagiaires en fin de stage</div>
     <div class="stats-container">
-      <i class="fas fa-graduation-cap icon"></i>
+      {{-- <i class="fas fa-graduation-cap icon"></i> --}}
       <span class="stats near-completion">{{ $nearCompletionCount > 0 ? $nearCompletionCount : 0 }}</span>
     </div>
   </div>
@@ -74,13 +74,14 @@
               <span class="overlay-id">{{ $intern->id }}</span>
             </li>
             <li>
-              <strong>Prénom :</strong>
-              <span class="overlay-firstname">{{ $intern->firstName }}</span>
-            </li>
-            <li>
               <strong>Nom :</strong>
               <span class="overlay-lastname">{{ $intern->lastName }}</span>
             </li>
+            <li>
+              <strong>Prénom :</strong>
+              <span class="overlay-firstname">{{ $intern->firstName }}</span>
+            </li>
+            
             <li>
               <strong>Âge :</strong>
               <span class="overlay-age">{{ $intern->age }}</span>
@@ -94,23 +95,23 @@
               <span class="overlay-phone">{{ $intern->phone }}</span>
             </li>
             <li>
-              <strong>Adresse :</strong>
+              <strong>Adresse personnelle :</strong>
               <span class="overlay-address">{{ $intern->address }}</span>
             </li>
             <li>
-              <strong>École :</strong>
+              <strong>École / institut :</strong>
               <span class="overlay-school">{{ $intern->school }}</span>
             </li>
             <li>
-              <strong>Secteur :</strong>
+              <strong>Spécialité :</strong>
               <span class="overlay-sector">{{ $intern->sector }}</span>
             </li>
             <li>
-              <strong>Date de début :</strong>
+              <strong>Date de début de stage :</strong>
               <span class="overlay-startdate">{{ $intern->startDate }}</span>
             </li>
             <li>
-              <strong>Date de fin :</strong>
+              <strong>Date de fin de stage :</strong>
               <span class="overlay-enddate">{{ $intern->endDate }}</span>
             </li>
           </ul>
@@ -124,7 +125,7 @@
 @endif
 </div>
 
-<h1>Détails des stagiaires</h1>
+<h1>Informations des stagiaires</h1>
 
 <div class="search-container">
   <input type="text" class="search-input" placeholder="Rechercher..." />
@@ -153,15 +154,15 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th>Image</th>
-        <th>Prénom</th>
+        <th>Photo</th>
         <th>Nom</th>
+        <th>Prénom</th>
         <th>Âge</th>
         <th>CIN</th>
         <th>Téléphone</th>
-        <th>Adresse</th>
-        <th>École</th>
-        <th>Secteur</th>
+        <th>Adresse personnelle</th>
+        <th>École/institut</th>
+        <th>Spécialité</th>
         <th>Date de début</th>
         <th>Date de fin</th>
         <th></th>

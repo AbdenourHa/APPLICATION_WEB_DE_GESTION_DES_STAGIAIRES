@@ -21,7 +21,7 @@ class InternSeeder extends Seeder
                 'sector' => '',
                 'startDate' => '',
                 'endDate' => '',
-                'image' => 'public\images\intern.png',
+                'image' => 'public/images/intern.png',
             ],
         ];
 

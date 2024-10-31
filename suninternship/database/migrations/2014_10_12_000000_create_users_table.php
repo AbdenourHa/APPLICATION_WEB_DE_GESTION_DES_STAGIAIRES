@@ -13,6 +13,7 @@ class CreateUsersTable extends Migration
             $table->string('fullname'); // Add the fullname column
             $table->string('email', 191)->unique();  // Modifiez ici
             $table->string('password');
+            $table->string('image')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

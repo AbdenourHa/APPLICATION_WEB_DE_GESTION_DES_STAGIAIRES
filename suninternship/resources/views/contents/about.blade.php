@@ -1,16 +1,16 @@
 <section class="welcome">
     <div class="container">
     <h1>À propos de nous</h1>
-    <p>
+    {{-- <p>
         Faites la connaissance d'OSSAMA, notre talentueux étudiant en génie
         informatique et fondateur de notre site de gestion de stages. Avec
         son expertise en développement web et en design UI/UX, il s'engage à
         fournir des services de haute qualité à nos clients.
-    </p>
+    </p> --}}
     </div>
 </section>
 
-<section class="advantages">
+{{-- <section class="advantages">
     <div class="container">
     <h2 class="advantages-title">Nos valeurs fondamentales</h2>
     <div class="advantages-container">
@@ -43,9 +43,9 @@
         </div>
     </div>
     </div>
-</section>
+</section> --}}
 
-<section class="team">
+{{-- <section class="team">
     <div class="container">
     <h2>Rencontrez notre équipe</h2>
     <div class="card-container">
@@ -69,9 +69,9 @@
         </div>
     </div>
     </div>
-</section>
+</section> --}}
 
-<section class="developer">
+{{-- <section class="developer">
     <div class="container">
     <h2>À propos du fondateur</h2>
     <div class="row">
@@ -89,9 +89,9 @@
             ><i class="fab fa-github"></i
             ></a>
         </div>
-        </div>
+        </div> --}}
 
-        <div class="col">
+        {{-- <div class="col">
         <p>
             OSSAMA ETTAQAFI est un talentueux étudiant en génie informatique
             passionné par la simplification de la gestion des stages. Avec
@@ -104,7 +104,7 @@
         </div>
     </div>
     </div>
-</section>
+</section> --}}
 
 <section id="contact" class="contact">
     <div class="container">
@@ -143,8 +143,7 @@
             </div>
             <div class="contact-note">
                 <p>
-                    <i class="fas fa-info-circle"></i> Pour toutes les demandes,
-                    veuillez nous contacter à ossamaett2002@gmail.com
+                    <i class="fas fa-info-circle"></i> Pour toutes les demandes,veuillez nous contacter à abdou09nn@gmail.com .
                 </p>
             </div>
             <button type="submit">Envoyer</button>

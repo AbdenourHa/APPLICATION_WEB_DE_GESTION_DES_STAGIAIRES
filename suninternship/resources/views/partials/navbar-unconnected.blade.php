@@ -3,14 +3,14 @@
         <a href="{{ route('accueil') }}" class="logo" title="Cliquez pour allez vers l'accueil">
           <img src="{{ asset('images/ssssssonatrach.ico') }}" alt="Logo"></a>
         <ul>
-            <li><a href="{{ route('about') }}">À propos</a></li>
-            <li><a href="{{ route('service') }}">Service</a></li>
+            {{-- <li><a href="{{ route('about') }}">À propos</a></li>
+            <li><a href="{{ route('service') }}">Service</a></li> --}}
             <li><a href="{{ route('about.contact') }}">Contact</a></li>
             <li>
                 @if(Route::currentRouteName() === 'login')
                     <a href="{{ route('register') }}" class="login">S'inscrire</a>
                 @elseif(Route::currentRouteName() === 'register')
-                    <a href="{{ route('login') }}" class="login">Se connecte</a>
+                    <a href="{{ route('login') }}" class="login">Se connecter</a>
                 @else
                     <a href="{{ route('login') }}" class="login">Se connecter</a>
                 @endif

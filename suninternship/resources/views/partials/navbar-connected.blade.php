@@ -3,7 +3,7 @@
     <span>
       <i class="fa-solid fa-bars" id="sidebar-close"></i>
       <a href="{{ route('dashboard.main') }}" class="logo">
-        <img src="{{ asset('images/suninternship.png') }}" alt="Logo" />
+        <img src="{{ asset('images/ssssssonatrach.ico') }}" alt="Logo" />
       </a>
     </span>
     <ul>
@@ -35,8 +35,8 @@
       <li class="more-items">
         <a href="#"><i class="fa-solid fa-ellipsis-h"></i></a>
         <ul class="hidden-menu">
-          <li><a href="{{ route('about') }}">Propos</a></li>
-          <li><a href="{{ route('service') }}">Service</a></li>
+          {{-- <li><a href="{{ route('about') }}">Propos</a></li>
+          <li><a href="{{ route('service') }}">Service</a></li> --}}
           <li><a href="{{ route('about.contact') }}">Contact</a></li>
         </ul>
       </li>
