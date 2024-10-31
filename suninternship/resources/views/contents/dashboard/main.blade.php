@@ -86,10 +86,10 @@
               <strong>Âge :</strong>
               <span class="overlay-age">{{ $intern->age }}</span>
             </li>
-            <li>
+            {{-- <li>
               <strong>CIN :</strong>
               <span class="overlay-cin">{{ $intern->cin }}</span>
-            </li>
+            </li> --}}
             <li>
               <strong>Téléphone :</strong>
               <span class="overlay-phone">{{ $intern->phone }}</span>
@@ -99,7 +99,7 @@
               <span class="overlay-address">{{ $intern->address }}</span>
             </li>
             <li>
-              <strong>École / institut :</strong>
+              <strong>Centre/institut :</strong>
               <span class="overlay-school">{{ $intern->school }}</span>
             </li>
             <li>
@@ -107,11 +107,11 @@
               <span class="overlay-sector">{{ $intern->sector }}</span>
             </li>
             <li>
-              <strong>Date de début de stage :</strong>
+              <strong>Date début de stage :</strong>
               <span class="overlay-startdate">{{ $intern->startDate }}</span>
             </li>
             <li>
-              <strong>Date de fin de stage :</strong>
+              <strong>Date fin de stage :</strong>
               <span class="overlay-enddate">{{ $intern->endDate }}</span>
             </li>
           </ul>
@@ -158,7 +158,7 @@
         <th>Nom</th>
         <th>Prénom</th>
         <th>Âge</th>
-        <th>CIN</th>
+        {{-- <th>CIN</th> --}}
         <th>Téléphone</th>
         <th>Adresse personnelle</th>
         <th>École/institut</th>
@@ -190,7 +190,7 @@
         <td>{{ $intern->firstName }}</td>
         <td>{{ $intern->lastName }}</td>
         <td>{{ $intern->age }}</td>
-        <td>{{ $intern->cin }}</td>
+        {{-- <td>{{ $intern->cin }}</td> --}}
         <td>{{ $intern->phone }}</td>
         <td>{{ $intern->address }}</td>
         <td>{{ $intern->school }}</td>
@@ -262,7 +262,7 @@
           required
         />
       </div>
-      <div class="form-group">
+      {{-- <div class="form-group">
         <label for="edit-cin"><i class="fas fa-id-card-alt"></i></label>
         <input
           type="text"
@@ -271,7 +271,7 @@
           placeholder="CIN"
           required
         />
-      </div>
+      </div> --}}
       <div class="form-group">
         <label for="edit-phone"><i class="fas fa-phone"></i></label>
         <input
@@ -366,7 +366,7 @@
         />
       </div>
 
-      <div class="form-group">
+      {{-- <div class="form-group">
         <label for="new-cin"><i class="fas fa-id-card-alt"></i></label>
         <input
           type="text"
@@ -375,7 +375,7 @@
           placeholder="CIN"
           required
         />
-      </div>
+      </div> --}}
 
       <div class="form-group">
         <label for="new-address"><i class="fas fa-map-marker-alt"></i></label>

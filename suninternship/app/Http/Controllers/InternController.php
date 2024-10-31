@@ -45,29 +45,33 @@ class InternController extends Controller
     }
 
     public function showInternDetailsMain()
-    {
-        // Count all interns
-        $internCount = Intern::count();
+{
+    // Count all interns
+    $internCount = Intern::count();
     
-        // Count distinct sectors
-        $sectorsCount = Intern::distinct('sector')->count('sector');
+    // Count distinct sectors
+    $sectorsCount = Intern::distinct('sector')->count('sector');
     
-        // Count interns near completion based on the current date
-        $currentDate = Carbon::now();
-        $nearCompletionCount = Intern::whereNotNull('endDate')
-            ->whereDate('endDate', '>=', $currentDate)
-            ->count();
+    // Count interns near completion based on the current date
+    $currentDate = Carbon::now();
+    $thresholdDate = $currentDate->copy()->addMonths(3); // Vous pouvez ajuster le nombre de mois ici
+
+    $nearCompletionCount = Intern::whereNotNull('endDate')
+        ->whereDate('endDate', '>=', $currentDate)
+        ->whereDate('endDate', '<=', $thresholdDate) // Ne considérer que ceux qui finissent d'ici 6 mois
+        ->count();
     
-        // Retrieve all interns
-        $interns = Intern::all();
+    // Retrieve all interns
+    $interns = Intern::all();
     
-        return view('pages.dashboard.main', [
-            'internCount' => $internCount,
-            'sectorsCount' => $sectorsCount,
-            'nearCompletionCount' => $nearCompletionCount,
-            'interns' => $interns,
-        ]);
-    }
+    return view('pages.dashboard.main', [
+        'internCount' => $internCount,
+        'sectorsCount' => $sectorsCount,
+        'nearCompletionCount' => $nearCompletionCount,
+        'interns' => $interns,
+    ]);
+}
+
     
 
     public function update(Request $request, $id)
