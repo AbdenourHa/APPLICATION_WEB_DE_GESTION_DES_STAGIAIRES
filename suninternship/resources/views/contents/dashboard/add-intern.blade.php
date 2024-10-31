@@ -73,14 +73,14 @@
         <p class="error-message">{{ $message }}</p>
         @enderror
       </div>
-      <div class="form-row">
+      {{-- <div class="form-row">
         <label for="cin"><i class="fas fa-id-card-alt"></i> CIN</label>
         <input type="text" id="cin" name="cin" value="{{ old('cin') }}" />
         @error('cin')
         <p class="error-message">{{ $message }}</p>
         @enderror
       </div>
-    </div>
+    </div> --}}
 
     <div class="form-group">
       <div class="form-row">
@@ -108,7 +108,7 @@
 
     <div class="form-group">
       <div class="form-row">
-        <label for="school"><i class="fas fa-graduation-cap"></i> École</label>
+        <label for="school"><i class="fas fa-graduation-cap"></i> Centre/Institut</label>
         <input
           type="text"
           id="school"
@@ -120,7 +120,7 @@
         @enderror
       </div>
       <div class="form-row">
-        <label for="sector"><i class="fas fa-industry"></i> Secteur</label>
+        <label for="sector"><i class="fas fa-industry"></i> Spécialité</label>
         <input
           type="text"
           id="sector"
@@ -136,7 +136,7 @@
     <div class="form-group">
       <div class="form-row">
         <label for="startDate"
-          ><i class="fas fa-calendar-alt"></i> Date de Début</label
+          ><i class="fas fa-calendar-alt"></i> Date Début de stage</label
         >
         <input
           type="date"
@@ -150,7 +150,7 @@
       </div>
       <div class="form-row">
         <label for="endDate"
-          ><i class="fas fa-calendar-alt"></i> Date de Fin</label
+          ><i class="fas fa-calendar-alt"></i> Date Fin de stage</label
         >
         <input
           type="date"

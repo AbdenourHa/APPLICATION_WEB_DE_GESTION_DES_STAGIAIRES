@@ -93,22 +93,22 @@
 <body>
     <div class="header">
         <div class="logo">
-            <img src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('images/suninternship.png'))) }}" alt="Logo">
+            <img src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('images/ssssssonatrach.png'))) }}" alt="Logo">
         </div>
         <div class="export-info">
-           Sidi Bennour, le {{ now()->format('Y-m-d') }}
+           Alger, le {{ now()->format('Y-m-d') }}
         </div>
     </div>
 
     <div class="container">
-        <p><span style="font-weight:bold;">Cosumar Doukkala</span></p>
-        <p><span style="font-weight:bold;">MH99+33C, Sidi Bennour</span></p>
+        <p><span style="font-weight:bold;">Sonatrach Direction Generale</span></p>
+        <p><span style="font-weight:bold;">Hydra, Alger</span></p>
 
         <h2>Attestation de stage</h2>
 
-        <p>Je soussigné(e), Madame/Mademoiselle/Monsieur ____________________________ intervenant en qualité de ____________________________,
+        <p>Je soussigné(e), Monsieur IRATHEN Otmane intervenant en qualité de Chef cellule formation,
         certifie par la présente que Madame/Mademoiselle/Monsieur <span style="font-weight:bold;">{{ $intern->lastName }} {{ $intern->firstName }}</span>
-        demeurant au <span style="font-weight:bold;">{{ $intern->address }}</span>, a effectué un stage au sein de notre entreprise <span style="font-weight:bold;">Cosumar Doukkala</span>, du <span style="font-weight:bold;">{{ $intern->startDate }}</span> au 
+        demeurant au <span style="font-weight:bold;">{{ $intern->address }}</span>, a effectué un stage au sein de notre entreprise <span style="font-weight:bold;">Sonatrach</span>, du <span style="font-weight:bold;">{{ $intern->startDate }}</span> au 
         <span style="font-weight:bold;">{{ $intern->endDate }}</span> en qualité de <span style="font-weight:bold;">{{ $intern->sector }}</span>.</p>
 
         <p>Cette attestation est délivrée à l'intéressé(e) afin de servir et valoir ce que de droit.</p>
@@ -126,7 +126,7 @@
     </div>
 
     <div class="attestation-info">
-        &copy; SunInternship - Cette attestation est faite uniquement pour le projet !
+        &copy; <strong>Sonatrach</strong>
     </div>
 </body>
 </html>

@@ -9,7 +9,7 @@
 </div>
 </section>
 
-<section class="advantages">
+{{-- <section class="advantages">
 <div class="container">
     <h2 class="advantages-title">Avantages de nos services</h2>
     <div class="advantages-container">
@@ -47,9 +47,9 @@
     </div>
     </div>
 </div>
-</section>
+</section> --}}
 
-<section class="process">
+{{-- <section class="process">
 <div class="container">
     <h2>Notre Processus de Gestion des Stagiaires</h2>
     <ul class="process-steps">
@@ -107,4 +107,4 @@
     </p>
     <a href="{{ route('login') }}" class="btn">S'inscrire maintenant</a>
 </div>
-</section>
+</section> --}}

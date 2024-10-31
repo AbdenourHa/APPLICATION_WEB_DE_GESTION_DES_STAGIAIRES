@@ -25,7 +25,7 @@ function clearForm() {
   document.getElementById("firstName").value = "";
   document.getElementById("lastName").value = "";
   document.getElementById("age").value = "";
-  document.getElementById("cin").value = "";
+  // document.getElementById("cin").value = "";
   document.getElementById("phone").value = "";
   document.getElementById("address").value = "";
   document.getElementById("school").value = "";

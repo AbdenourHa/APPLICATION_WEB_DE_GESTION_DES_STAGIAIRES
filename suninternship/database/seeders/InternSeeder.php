@@ -16,7 +16,7 @@ class InternSeeder extends Seeder
                 'age' => null,
                 'address' => '',
                 'school' => '',
-                'cin' => '',
+                // 'cin' => '',
                 'phone' => '',
                 'sector' => '',
                 'startDate' => '',

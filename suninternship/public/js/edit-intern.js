@@ -32,7 +32,7 @@ function clearForm() {
   document.getElementById("startDate").value = "";
   document.getElementById("endDate").value = "";
   document.getElementById("phone").value = "";
-  document.getElementById("cin").value = "";
+  // document.getElementById("cin").value = "";
   formImage.src = defaultImagePath; // Set the default image
 }
 
@@ -64,7 +64,7 @@ function updateInternSelection(selectedItem, internId) {
       const startDate = item.querySelector(".intern-start-date").textContent;
       const endDate = item.querySelector(".intern-end-date").textContent;
       const phone = item.querySelector(".intern-phone").textContent;
-      const cin = item.querySelector(".intern-cin").textContent;
+      // const cin = item.querySelector(".intern-cin").textContent;
       const imageSrc = item.querySelector("img").getAttribute("src");
 
       // Update the form fields with the intern's information
@@ -77,7 +77,7 @@ function updateInternSelection(selectedItem, internId) {
       document.getElementById("startDate").value = startDate;
       document.getElementById("endDate").value = endDate;
       document.getElementById("phone").value = phone;
-      document.getElementById("cin").value = cin;
+      // document.getElementById("cin").value = cin;
       formImage.src = imageSrc;
       
       // Update form action with the intern ID

@@ -18,7 +18,7 @@ class CreateInternsTable extends Migration
             $table->string('firstName');
             $table->string('lastName');
             $table->integer('age');
-            $table->string('cin');
+            // $table->string('cin');
             $table->string('phone');
             $table->string('address');
             $table->string('school');

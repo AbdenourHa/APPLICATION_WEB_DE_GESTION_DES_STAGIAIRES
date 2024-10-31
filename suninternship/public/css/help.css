@@ -6,7 +6,7 @@
   
   h1,
   h2 {
-    color: #007bff;
+    color: #000000;
     margin-bottom: 20px;
   }
   
@@ -93,7 +93,7 @@
   .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #007bff;
+    color: #000000;
     font-weight: 600;
   }
   
@@ -116,7 +116,7 @@
   }
   
   .submit-btn {
-    background-color: #007bff;
+    background-color: #ff8500;
     color: #fff;
     padding: 12px 24px;
     border: none;
@@ -128,7 +128,7 @@
   }
   
   .submit-btn:hover {
-    background-color: #0056b3;
+    background-color: #000000;
   }
   
   /* Hover effect on cards */

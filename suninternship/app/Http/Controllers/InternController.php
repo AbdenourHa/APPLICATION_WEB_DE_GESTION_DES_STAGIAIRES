@@ -83,7 +83,7 @@ class InternController extends Controller
             'startDate' => 'required|date',
             'endDate' => 'required|date',
             'image' => 'nullable|image|mimes:jpeg,png|max:2048|dimensions:min_width=256,min_height=256',
-            'cin' => 'required',
+            // 'cin' => 'required',
         ], [
             'firstName.required' => 'Le prénom est requis.',
             'lastName.required' => 'Le nom de famille est requis.',
@@ -101,7 +101,7 @@ class InternController extends Controller
             'image.mimes' => 'Le fichier doit être de type JPEG ou PNG.',
             'image.max' => 'La taille de l\'image ne doit pas dépasser 2 Mo.',
             'image.dimensions' => 'L\'image doit avoir une largeur minimale de 256 pixels et une hauteur minimale de 256 pixels.',
-            'cin.required' => 'Le CIN est requis.',
+            // 'cin.required' => 'Le CIN est requis.',
         ]);
 
         if ($validator->fails()) {
@@ -142,7 +142,7 @@ class InternController extends Controller
             'startDate' => 'required|date',
             'endDate' => 'required|date',
             'image' => 'nullable|image|mimes:jpeg,png|max:2048|dimensions:min_width=256,min_height=256',
-            'cin' => 'required',
+            // 'cin' => 'required',
         ], [
             'firstName.required' => 'Le prénom est requis.',
             'lastName.required' => 'Le nom de famille est requis.',
@@ -160,7 +160,7 @@ class InternController extends Controller
             'image.mimes' => 'Le fichier doit être de type JPEG ou PNG.',
             'image.max' => 'La taille de l\'image ne doit pas dépasser 2 Mo.',
             'image.dimensions' => 'L\'image doit avoir une largeur minimale de 256 pixels et une hauteur minimale de 256 pixels.',
-            'cin.required' => 'Le CIN est requis.',
+            // 'cin.required' => 'Le CIN est requis.',
         ]);
 
         if ($validator->fails()) {
@@ -221,7 +221,7 @@ class InternController extends Controller
         $intern->firstName = $request->input('new-firstname');
         $intern->lastName = $request->input('new-lastname');
         $intern->age = $request->input('new-age');
-        $intern->cin = $request->input('new-cin');
+        // $intern->cin = $request->input('new-cin');
         $intern->phone = $request->input('new-phone');
         $intern->address = $request->input('new-address');
         $intern->school = $request->input('new-school');
@@ -252,7 +252,7 @@ class InternController extends Controller
         $intern->firstName = $request->input('edit-firstname');
         $intern->lastName = $request->input('edit-lastname');
         $intern->age = $request->input('edit-age');
-        $intern->cin = $request->input('edit-cin');
+        // $intern->cin = $request->input('edit-cin');
         $intern->phone = $request->input('edit-phone');
         $intern->address = $request->input('edit-address');
         $intern->school = $request->input('edit-school');

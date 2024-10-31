@@ -54,7 +54,7 @@
 <body>
     <div class="header">
         <div class="logo">
-            <img src="data:image/x-icon;base64,{{ base64_encode(file_get_contents(public_path('images/ssssssonatrach.ico'))) }}" alt="Logo">
+            <img src="data:image/x-icon;base64,{{ base64_encode(file_get_contents(public_path('images/ssssssonatrach.png'))) }}" alt="Logo">
         </div>
         <div class="export-info">
             Page : {{ $pageNumber }} / {{ $totalPages }} | Exporté en: {{ now()->format('Y-m-d H:i:s') }}
@@ -68,8 +68,8 @@
                 <th>Nom</th>
                 <th>Prenom</th>
                 <th>Âge</th>
+                {{-- <th>CIN</th> --}}
                 <th>Téléphone</th>
-                <th>CIN</th>
                 <th>Adresse personnelle</th>
                 <th>Centre/institut</th>
                 <th>Spécialité</th>
@@ -84,7 +84,7 @@
                     <td>{{ $intern->firstName }}</td>
                     <td>{{ $intern->lastName }}</td>
                     <td>{{ $intern->age }}</td>
-                    <td>{{ $intern->cin }}</td>
+                    {{-- <td>{{ $intern->cin }}</td> --}}
                     <td>{{ $intern->phone }}</td>
                     <td>{{ $intern->address }}</td>
                     <td>{{ $intern->school }}</td>

@@ -106,7 +106,7 @@
   .my-nav-link:hover {
     background-color: #f8f8f8;
     color: #000000;
-    border-right: 3px solid #007bff;
+    border-right: 3px solid #ff8500;
   }
   
   .my-tab-content {
@@ -146,12 +146,12 @@
   }
   
   .buttons button.my-btn-primary {
-    background-color: #007bff;
+    background-color: #ff8500;
     color: #ffffff;
   }
   
   .buttons button.my-btn-primary:hover {
-    background-color: #0069d9;
+    background-color: #000000;
   }
   
   .buttons button.my-btn-light {

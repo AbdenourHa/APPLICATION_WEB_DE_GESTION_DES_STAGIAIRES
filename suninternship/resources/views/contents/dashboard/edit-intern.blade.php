@@ -25,7 +25,7 @@
               <span class="intern-firstname">{{ $intern->firstName }}</span>
               <span class="intern-lastname">{{ $intern->lastName }}</span>
               <span class="intern-age">{{ $intern->age }}</span>
-              <span class="intern-cin">{{ $intern->cin }}</span>
+              {{-- <span class="intern-cin">{{ $intern->cin }}</span> --}}
               <span class="intern-phone">{{ $intern->phone }}</span>
               <span class="intern-address">{{ $intern->address }}</span>
               <span class="intern-school">{{ $intern->school }}</span>
@@ -130,14 +130,14 @@
             <p class="error-message">{{ $message }}</p>
           @enderror
         </div>
-        <div class="form-row">
+        {{-- <div class="form-row">
           <label for="address"><i class="fas fa-id-card-alt"></i> CIN</label>
           <input type="text" id="cin" name="cin" value="{{ $intern->cin }}" />
           @error('cin')
             <p class="error-message">{{ $message }}</p>
           @enderror
         </div>
-      </div>
+      </div> --}}
 
       <div class="form-group">
         <div class="form-row">
@@ -168,7 +168,7 @@
 
       <div class="form-group">
         <div class="form-row">
-          <label for="school"><i class="fas fa-graduation-cap"></i> École</label>
+          <label for="school"><i class="fas fa-graduation-cap"></i> Centre/Institut</label>
           <input
             type="text"
             id="school"
@@ -180,7 +180,7 @@
           @enderror
         </div>
         <div class="form-row">
-          <label for="sector"><i class="fas fa-industry"></i> Secteur</label>
+          <label for="sector"><i class="fas fa-industry"></i> Spécialité</label>
           <input
             type="text"
             id="sector"
@@ -195,7 +195,7 @@
 
       <div class="form-group">
         <div class="form-row">
-          <label for="startDate"><i class="fas fa-calendar-alt"></i> Date de début</label>
+          <label for="startDate"><i class="fas fa-calendar-alt"></i> Date début de stage</label>
           <input
             type="date"
             id="startDate"
@@ -207,7 +207,7 @@
           @enderror
         </div>
         <div class="form-row">
-          <label for="endDate"><i class="fas fa-calendar-alt"></i> Date de fin</label>
+          <label for="endDate"><i class="fas fa-calendar-alt"></i> Date fin de stage</label>
           <input
             type="date"
             id="endDate"
