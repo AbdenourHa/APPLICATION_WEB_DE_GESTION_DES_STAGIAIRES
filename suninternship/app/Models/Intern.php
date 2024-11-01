@@ -10,7 +10,6 @@ class Intern extends Model
         'firstName',
         'lastName',
         'age',
-        // 'cin',
         'phone',
         'address',
         'school',

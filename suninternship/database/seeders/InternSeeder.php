@@ -11,16 +11,6 @@ class InternSeeder extends Seeder
     {
         $interns = [
             [
-                'firstName' => '',
-                'lastName' => '',
-                'age' => null,
-                'address' => '',
-                'school' => '',
-                // 'cin' => '',
-                'phone' => '',
-                'sector' => '',
-                'startDate' => '',
-                'endDate' => '',
                 'image' => 'public/images/intern.png',
             ],
         ];

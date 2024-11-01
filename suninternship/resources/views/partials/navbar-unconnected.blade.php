@@ -6,7 +6,7 @@
             {{-- <li><a href="{{ route('about') }}">À propos</a></li>
             <li><a href="{{ route('service') }}">Service</a></li> --}}
             <li><a href="{{ route('about.contact') }}">Contact</a></li>
-            <li>
+            {{-- <li>
                 @if(Route::currentRouteName() === 'login')
                     <a href="{{ route('register') }}" class="login">S'inscrire</a>
                 @elseif(Route::currentRouteName() === 'register')
@@ -14,7 +14,7 @@
                 @else
                     <a href="{{ route('login') }}" class="login">Se connecter</a>
                 @endif
-            </li>
+            </li> --}}
         </ul>
     </nav>
     <ul class="breadcrumb">

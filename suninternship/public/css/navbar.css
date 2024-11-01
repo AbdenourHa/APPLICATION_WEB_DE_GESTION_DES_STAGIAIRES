@@ -392,7 +392,7 @@ li .login:focus {
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: #888; /* Breadcrumb text color */
+  color: transparent; /* Breadcrumb text color */
 }
 
 .breadcrumb li {
@@ -402,7 +402,7 @@ li .login:focus {
 
 .breadcrumb a {
   text-decoration: none;
-  color: #888; /* Breadcrumb link color */
+  color: transparent; /* Breadcrumb link color */
 }
 
 .breadcrumb i {
@@ -415,7 +415,7 @@ li .login:focus {
 
 .breadcrumb::after {
   margin: 0 5px; /* Adjust spacing between breadcrumb items */
-  color: #888; /* Breadcrumb separator color */
+  color: transparent; /* Breadcrumb separator color */
 }
 
 @media only screen and (min-width: 500px) {

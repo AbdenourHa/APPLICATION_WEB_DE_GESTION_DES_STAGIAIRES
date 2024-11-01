@@ -1,4 +1,4 @@
-<h1>Statistiques</h1>
+
 <div class="allstats-container">
   <div class="card">
     <div class="title">Stagiaires</div>
@@ -13,6 +13,14 @@
     <div class="stats-container">
       {{-- <i class="fas fa-building icon"></i> --}}
       <span class="stats sectors">{{ $sectorsCount > 0 ? $sectorsCount : 0 }}</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="title">Encadreur</div>
+    <div class="stats-container">
+      {{-- <i class="fas fa-building icon"></i> --}}
+      {{-- <span class="stats sectors">{{ $sectorsCount > 0 ? $sectorsCount : 0 }}</span> --}}
     </div>
   </div>
 
