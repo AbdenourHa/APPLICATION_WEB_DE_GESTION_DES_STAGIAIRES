@@ -101,20 +101,21 @@
     </div>
 
     <div class="container">
-        <p><span style="font-weight:bold;">Sonatrach Direction Generale</span></p>
-        <p><span style="font-weight:bold;">Hydra, Alger</span></p>
+        <p><span style="font-weight:bold;">Direction Formation & Planification RH</span></p>
+        <p><span style="font-weight:bold;">Departement Gestion De La Formation Seige</span></p>
 
         <h2>Attestation de stage</h2>
 
-        <p>Je soussigné(e), Monsieur IRATHEN Otmane intervenant en qualité de Chef cellule formation,
-        certifie par la présente que Madame/Mademoiselle/Monsieur <span style="font-weight:bold;">{{ $intern->lastName }} {{ $intern->firstName }}</span>
-        demeurant au <span style="font-weight:bold;">{{ $intern->address }}</span>, a effectué un stage au sein de notre entreprise <span style="font-weight:bold;">Sonatrach</span>, du <span style="font-weight:bold;">{{ $intern->startDate }}</span> au 
-        <span style="font-weight:bold;">{{ $intern->endDate }}</span> en qualité de <span style="font-weight:bold;">{{ $intern->sector }}</span>.</p>
+        <p>
+          Je soussigné(e) : <strong>Le Directeur Formation & Planification RH</strong><br>
+          Atteste que :<span style="font-weight:bold;">{{ $intern->lastName }} {{ $intern->firstName }}</span> demeurant au <span style="font-weight:bold;">{{ $intern->address }}</span><br>
+          A effectué un stage au sein de notre entreprise <span style="font-weight:bold;">Sonatrach</span><br> 
+          du <span style="font-weight:bold;">{{ $intern->startDate }}</span> au <span style="font-weight:bold;">{{ $intern->endDate }}</span>
+        </p>
 
-        <p>Cette attestation est délivrée à l'intéressé(e) afin de servir et valoir ce que de droit.</p>
+        <p>Cette attestation est délivrée à l'intéressé(e) afin de servir et faire valoir ce que de droit.</p>
 
-        <p>Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.</p>
-
+        
         <div class="side-container">
             <div class="left-side">
                 <p>Responsable RH</p>
