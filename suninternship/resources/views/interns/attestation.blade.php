@@ -101,8 +101,10 @@
     </div>
 
     <div class="container">
-        <p><span style="font-weight:bold;">Direction Formation & Planification RH</span></p>
-        <p><span style="font-weight:bold;">Departement Gestion De La Formation Seige</span></p>
+        <p>
+           <span style="font-weight:bold;">Direction Formation & Planification RH</span><br>
+           <span style="font-weight:bold;">Departement Gestion De La Formation Seige</span>
+        </p>
 
         <h2>Attestation de stage</h2>
 

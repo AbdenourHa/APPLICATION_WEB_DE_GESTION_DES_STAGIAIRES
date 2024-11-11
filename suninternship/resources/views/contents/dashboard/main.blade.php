@@ -16,13 +16,13 @@
     </div>
   </div>
 
-  <div class="card">
+  {{-- <div class="card">
     <div class="title">Encadreur</div>
     <div class="stats-container">
-      {{-- <i class="fas fa-building icon"></i> --}}
-      {{-- <span class="stats sectors">{{ $sectorsCount > 0 ? $sectorsCount : 0 }}</span> --}}
+      <i class="fas fa-building icon"></i>
+      <span class="stats mentors">{{ $mentorsCount > 0 ? $mentorsCount : 0 }}</span>
     </div>
-  </div>
+  </div> --}}
 
   <div class="card">
     <div class="title">Stagiaires en fin de stage</div>
@@ -94,10 +94,12 @@
               <strong>Âge :</strong>
               <span class="overlay-age">{{ $intern->age }}</span>
             </li>
+
             {{-- <li>
               <strong>CIN :</strong>
               <span class="overlay-cin">{{ $intern->cin }}</span>
             </li> --}}
+
             <li>
               <strong>Téléphone :</strong>
               <span class="overlay-phone">{{ $intern->phone }}</span>
@@ -152,9 +154,9 @@
     <a href="{{ route('interns.export.pdf') }}">
       <i class="fas fa-file-pdf"></i> Exporter en PDF
     </a>
-    <a href="{{ route('interns.export.excel') }}">
+    {{-- <a href="{{ route('interns.export.excel') }}">
       <i class="fas fa-file-excel"></i> Exporter en Excel
-    </a>
+    </a> --}}
   </div>
   @endif
 

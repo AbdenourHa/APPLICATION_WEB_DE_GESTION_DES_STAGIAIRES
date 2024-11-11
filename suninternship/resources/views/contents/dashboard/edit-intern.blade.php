@@ -130,14 +130,9 @@
             <p class="error-message">{{ $message }}</p>
           @enderror
         </div>
-        {{-- <div class="form-row">
-          <label for="address"><i class="fas fa-id-card-alt"></i> CIN</label>
-          <input type="text" id="cin" name="cin" value="{{ $intern->cin }}" />
-          @error('cin')
-            <p class="error-message">{{ $message }}</p>
-          @enderror
-        </div>
-      </div> --}}
+        
+        
+      
 
       <div class="form-group">
         <div class="form-row">

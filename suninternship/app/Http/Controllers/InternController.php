@@ -2,24 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\InternsExport;
 use App\Http\Controllers\Controller;
 use App\Models\Intern;
+use App\Models\Mentor;
+use Carbon\Carbon;
+use Dompdf\Dompdf;
+
+use Dompdf\Options;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Date;
+
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
-use Carbon\Carbon;
-
-use App\Exports\InternsExport;
-use Illuminate\Support\Facades\Date;
-use Maatwebsite\Excel\Facades\Excel;
+use Illuminate\Support\Facades\View;
 use Maatwebsite\Excel\Excel as ExcelType;
 
+use Maatwebsite\Excel\Facades\Excel;
 use PDF;
-use Dompdf\Dompdf;
-use Dompdf\Options;
-use Illuminate\Support\Facades\View;
-
-use Illuminate\Http\Response;
 
 class InternController extends Controller
 {
@@ -51,6 +52,8 @@ class InternController extends Controller
     
     // Count distinct sectors
     $sectorsCount = Intern::distinct('sector')->count('sector');
+
+    
     
     // Count interns near completion based on the current date
     $currentDate = Carbon::now();

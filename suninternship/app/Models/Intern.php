@@ -18,4 +18,9 @@ class Intern extends Model
         'endDate',
         'image',
     ];
+
+    public function mentor()
+    {
+        return $this->belongsTo(Mentor::class);
+    }
 }
